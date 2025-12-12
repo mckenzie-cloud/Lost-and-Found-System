@@ -1,0 +1,7 @@
+/* Inner white card */
+.card {
+    -fx-background-color: #880b0be3;
+    -fx-padding: max;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 14, 0, 0, 4);
+}

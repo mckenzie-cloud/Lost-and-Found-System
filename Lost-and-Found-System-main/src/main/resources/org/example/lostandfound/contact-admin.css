@@ -1,0 +1,43 @@
+.root-bg {
+    -fx-background-color: #f2f2f2;
+}
+
+.card {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 12, 0, 0, 4);
+}
+
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #555;
+}
+
+.email-text {
+    -fx-font-size: 11px;
+    -fx-fill: #800000;
+    -fx-font-weight: bold;
+}
+
+.primary-btn {
+    -fx-background-color: #800000;
+    -fx-text-fill: white;
+    -fx-padding: 10;
+    -fx-background-radius: 8;
+}
+
+.back-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #800000;
+    -fx-font-size: 13px;
+}
+
+.button:hover {
+    -fx-opacity: 0.85;
+}

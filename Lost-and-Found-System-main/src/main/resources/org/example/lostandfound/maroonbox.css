@@ -1,0 +1,22 @@
+/* Root background (acts as margin area) */
+.root {
+    -fx-background-color: #800000;      /* card color */
+    -fx-padding: 20;                    /* clean spacing around card */
+}
+
+/* Main card container */
+.register-pane {
+    -fx-max-width: 400px;
+    -fx-background-color: #f2f2f2;      /* soft outer margin color */
+    -fx-background-radius: 10;          /* smooth rounded corners */
+    -fx-background-insets: 0;           /* removes uneven edges */
+    -fx-padding: 20;                    /* inner spacing */
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0, 0, 0, 0.18),
+            12,
+            0.25,
+            0,
+            4
+    );
+}

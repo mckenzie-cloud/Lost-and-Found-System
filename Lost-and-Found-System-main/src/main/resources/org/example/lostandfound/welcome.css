@@ -1,0 +1,61 @@
+/* ===== Background Gradient (Maroon Shades) ===== */
+
+.root-background {
+    -fx-background-color: linear-gradient(to bottom right, #7b0015, #b3001b);
+}
+
+/* ===== Card Container ===== */
+.heading-pane {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-max-width: 550px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 25, 0.3, 0, 6);
+}
+
+.credit-pane {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 5;
+    -fx-max-width: 500px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 25, 0.3, 0, 6);
+}
+
+.card {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 10;
+    -fx-max-width: 500px;
+
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 25, 0.3, 0, 6);
+}
+
+/* ===== Title Styling ===== */
+
+.title-text {
+    -fx-text-fill: #7b0015;  /* BatStateU Maroon */
+    -fx-text-alignment: center;
+}
+
+/* ===== Button Styling (Maroon button) ===== */
+
+.start-btn {
+    -fx-font-size: 20px;
+    -fx-padding: 10 30;
+    -fx-background-color: #7b0015;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 30;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 12, 0.3, 0, 4);
+}
+
+.start-btn:hover {
+    -fx-background-color: #99001c;
+    -fx-cursor: hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.start-btn:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lostandfound.UserDashboardSceneController">
+    <children>
+        <AnchorPane layoutX="-21.0" layoutY="-21.0" prefHeight="40.0" prefWidth="630.0" styleClass="card" stylesheets="@maroonbox.css" />
+        <AnchorPane layoutX="-8.0" layoutY="600.0" prefHeight="18.0" prefWidth="619.0" styleClass="card" stylesheets="@maroonbox.css">
+         <children>
+                <Text fill="WHITE" layoutX="172.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2025 Batangas State University • Lost &amp; Found System" wrappingWidth="275.966796875">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Text>
+         </children>
+        </AnchorPane>
+        <AnchorPane cache="true" cacheHint="SCALE_AND_ROTATE" layoutX="56.0" layoutY="227.0" prefHeight="150.0" prefWidth="496.0" styleClass="card" stylesheets="@borderpane.css">
+            <children>
+                <Text fill="RED" layoutX="98.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batangas State University">
+                    <font>
+                        <Font name="Bodoni MT Black" size="24.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="88.0" fitWidth="110.0" layoutX="198.0" layoutY="5.0">
+                    <image>
+                        <Image url="@OIP.jpg" />
+                    </image>
+                </ImageView>
+                <Text layoutX="158.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lost and Found Assistance System" wrappingWidth="192.53668212890625" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="116.0" layoutY="530.0" prefHeight="40.0" prefWidth="364.0" styleClass="card" stylesheets="@maroonboxmax.css">
+            <children>
+                <Text fill="#fcfcfc" layoutX="2.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Lost and Found then Lost Again then Never Found&quot;">
+                    <font>
+                        <Font name="Arial Black" size="13.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="22.0" layoutY="395.0" prefHeight="88.0" prefWidth="178.0" styleClass="card" stylesheets="@borderpane.css">
+            <children>
+                <Text fill="#6a0f1c" layoutX="34.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report Lost item">
+                    <font>
+                        <Font name="Arial Black" size="12.0" />
+                    </font>
+                </Text>
+                <Button layoutX="46.0" layoutY="47.0" mnemonicParsing="false" onAction="#onReportLostItemButton" prefHeight="26.0" prefWidth="77.0" styleClass="card" stylesheets="@borderpane.css" text="Click here" textFill="#0586ef" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="408.0" layoutY="395.0" prefHeight="88.0" prefWidth="178.0" styleClass="card" stylesheets="@borderpane.css">
+            <children>
+                <Button layoutX="48.0" layoutY="49.0" mnemonicParsing="false" onAction="#onViewItemButton" prefHeight="26.0" prefWidth="77.0" styleClass="card" stylesheets="@borderpane.css" text="Click here" textFill="#0586ef" />
+                <Text fill="#6a0f1c" layoutX="8.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Lost &amp; Found items">
+                    <font>
+                        <Font name="Arial Black" size="12.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="216.0" layoutY="395.0" prefHeight="88.0" prefWidth="178.0" styleClass="card" stylesheets="@borderpane.css">
+            <children>
+                <Text fill="#6a0f1c" layoutX="27.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report Found Items">
+                    <font>
+                        <Font name="Arial Black" size="12.0" />
+                    </font>
+                </Text>
+                <Button layoutX="50.0" layoutY="47.0" mnemonicParsing="false" onAction="#onReportFoundItemButton" prefHeight="26.0" prefWidth="77.0" styleClass="card" stylesheets="@borderpane.css" text="Click here" textFill="#0586ef" />
+            </children>
+        </AnchorPane>
+        <Label fx:id="user_full_name_lbl" layoutX="24.0" layoutY="27.0" prefHeight="28.0" prefWidth="284.0" text="Kento Mackenzie">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="user_srcode_lbl" layoutX="25.0" layoutY="53.0" text="24-61458" />
+        <Button layoutX="538.0" layoutY="29.0" mnemonicParsing="false" onAction="#onLogoutSubmitButton" style="-fx-background-radius: 18;" text="Log out" />
+      <Button layoutX="463.0" layoutY="29.0" mnemonicParsing="false" onAction="#onCheckMessageButton" style="-fx-background-radius: 18;" text="Message" />
+      <Button layoutX="377.0" layoutY="29.0" mnemonicParsing="false" onAction="#onViewMyReportsButton" style="-fx-background-radius: 18;" text="My reports" />
+      <ScrollPane fx:id="viewMyReports_ScrllPane" layoutX="251.0" layoutY="62.0" prefHeight="150.0" prefWidth="344.0" stylesheets="@scrollpane.css" />
+      <ImageView fitHeight="88.0" fitWidth="110.0" layoutX="496.0" layoutY="505.0">
+         <image>
+            <Image url="@red_spartans.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

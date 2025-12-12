@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400" prefWidth="500" stylesheets="@contact-admin.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lostandfound.contactSceneController">
+
+    <!-- Background -->
+    <AnchorPane styleClass="root-bg" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+        <!-- CARD -->
+        <VBox spacing="15" styleClass="card" AnchorPane.bottomAnchor="40" AnchorPane.leftAnchor="40" AnchorPane.rightAnchor="40" AnchorPane.topAnchor="40">
+
+            <!-- TITLE (unchanged meaning) -->
+            <Text styleClass="title" text="Contact Admin" />
+
+            <!-- EMAIL PROVIDED (CONTENT KEPT) -->
+            <VBox spacing="5">
+                <Label styleClass="label" text="Email:" />
+                <Text fx:id="emailText" styleClass="email-text" text="24-61458@g.batstate-u.edu.ph | Kento Mackenzie" />
+            </VBox>
+
+            <!-- VIEW REPORT BUTTON (KEPT) -->
+            <Button fx:id="viewReportBtn" onAction="#onViewReportInfoButton" styleClass="primary-btn" text="View Report" />
+
+            <Region VBox.vgrow="ALWAYS" />
+
+            <!-- BACK BUTTON (KEPT) -->
+            <Button fx:id="backBtn" onAction="#onReturnButton" styleClass="back-btn" text="Back" />
+
+        </VBox>
+
+    </AnchorPane>
+</AnchorPane>

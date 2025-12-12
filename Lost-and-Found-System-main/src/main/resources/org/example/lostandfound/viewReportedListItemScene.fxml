@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600" prefWidth="800" stylesheets="@view-report-list.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lostandfound.viewListOfReportedItemsSceneController">
+
+    <!-- Background -->
+    <AnchorPane fx:id="rootPane" styleClass="root-bg" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+        <!-- Main Card -->
+        <VBox fx:id="mainCard" spacing="15.0" styleClass="card" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+
+            <!-- Title -->
+            <Text fx:id="titleText" styleClass="title" text="Reported Items" />
+
+            <!-- ScrollPane (KEPT) -->
+            <ScrollPane fx:id="onViewReportedItemList_ScrollPane" fitToWidth="true" prefHeight="400.0" styleClass="scroll-pane">
+
+                <!-- Content container -->
+                <VBox fx:id="reportedListContainer" spacing="10.0" />
+            </ScrollPane>
+
+            <!-- Return Button (KEPT) -->
+            <Button onAction="#onReturnButton" styleClass="return-btn" text="Return" />
+        </VBox>
+
+    </AnchorPane>
+</AnchorPane>

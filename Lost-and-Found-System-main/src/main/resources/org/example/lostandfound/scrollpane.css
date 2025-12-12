@@ -1,0 +1,9 @@
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+/* Add other scroll bar styles as needed */
