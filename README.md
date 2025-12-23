@@ -46,8 +46,8 @@ Advanced features like RFID, GPS tracking, or automated item recognition are not
 ## 🛠️ Technologies Used
 - **DBMS** (PostgreSQL)
 - **UI** (JavaFX)
-- **Object Storage** (Apache Maven)
-- **Build system** (MinIO for uploading image)
+- **Object Storage** (MinIO for uploading image)
+- **Build system** (Apache Maven) 
 - **GitHub** for version control
 
 ## 📅 Project Timeline
